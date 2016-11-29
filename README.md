@@ -4,13 +4,18 @@ Hello everyone! I've created this lite version of the [Minecraft Servers List](h
 
 This code is free for everybody to use for personal purposes. It is strictly prohibited to resell any part of the code.
 
-## Requirements
+## Preview
 
-PHP 5.5 or higher
-MySQLi
-Rewrite Engine (htaccess)
-curl, json & openssl extensions must be enabled ( PayPal payment integration )
-Preparing
+![Screenshot 1](http://i.imgur.com/aFZXjmc.png)
+
+![Screenshot 2](http://imgur.com/M9Mb6fM.png)
+
+![Screenshot 3](http://imgur.com/FX3kkvu.png)
+
+![Screenshot 4](http://imgur.com/Sa13ENf.png)
+
+![Screenshot 5](http://imgur.com/PMkH8Qk.png)
+
 
 ## How to install
 1. Open your FTP and connect to your server
@@ -22,6 +27,12 @@ Preparing
 
 You can now login with your admin account( Username: admin ; Password: admin )
 
+## Requirements
+
+* PHP 5.5 or higher
+* MySQLi
+* Rewrite Engine (htaccess)
+* file_get_contents() enabled
 
 ## Contact
 You can contact me for support or freelance work at:
