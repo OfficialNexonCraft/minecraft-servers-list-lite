@@ -1,0 +1,44 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+
+	RewriteRule ^index$ index.php
+ 	RewriteRule ^login$ index.php?page=login
+	RewriteRule ^sitemap$ sitemap.php
+	RewriteRule ^logout$ index.php?page=logout
+	RewriteRule ^submit$ index.php?page=submit
+	RewriteRule ^lost-password$ index.php?page=lostpassword
+	RewriteRule ^reset-password/(.*)/(.*)$ index.php?page=resetpassword&email=$1&lost_password_code=$2
+	RewriteRule ^not-found$ index.php?page=notfound
+	RewriteRule ^settings/password$ index.php?page=password
+
+	RewriteRule ^admin/categories-management$ index.php?page=admin_categories_management
+	RewriteRule ^admin/categories-management/delete/(.*)/(.*)$ index.php?page=admin_categories_management&delete=$1&token=$2
+	RewriteRule ^admin/edit-category/(.*)$ index.php?page=admin_category_edit&category_id=$1
+
+	RewriteRule ^admin/users-management$ index.php?page=admin_users_management
+	RewriteRule ^admin/users-management/status/(.*)/(.*)$ index.php?page=admin_users_management&status=$1&token=$2
+	RewriteRule ^admin/users-management/delete/(.*)/(.*)$ index.php?page=admin_users_management&delete=$1&token=$2
+	RewriteRule ^admin/edit-user/(.*)$ index.php?page=admin_user_edit&user_id=$1
+
+	RewriteRule ^admin/servers-management$ index.php?page=admin_servers_management
+	RewriteRule ^admin/servers-management/status/(.*)/(.*)$ index.php?page=admin_servers_management&status=$1&token=$2
+	RewriteRule ^admin/servers-management/delete/(.*)/(.*)$ index.php?page=admin_servers_management&delete=$1&token=$2
+
+	RewriteRule ^admin/edit-server/(.*)/(.*)/(.*)$ index.php?page=admin_server_edit&server_id=$1&type=$2&token=$3
+	RewriteRule ^admin/edit-server/(.*)$ index.php?page=admin_server_edit&server_id=$1
+
+	RewriteRule ^admin/reports-management$ index.php?page=admin_reports_management
+	RewriteRule ^admin/edit-report/(.*)$ index.php?page=admin_report_edit&report_id=$1 [QSA]
+
+	RewriteRule ^admin/website-settings$ index.php?page=admin_website_settings
+	RewriteRule ^admin/website-statistics$ index.php?page=admin_website_statistics
+	RewriteRule ^admin/reset$ index.php?page=admin_reset
+
+	RewriteRule ^servers$ index.php?page=servers [QSA]
+	RewriteRule ^servers/([^/]+)$ index.php?page=servers&current_page=$1 [QSA]
+	RewriteRule ^server/([^/]+):([^/]+)$ index.php?page=server&address=$1&port=$2
+	RewriteRule ^category/([^/]*)$ index.php?page=category&url=$1
+	RewriteRule ^category/([^/]*)/([^/]*)$ index.php?page=category&url=$1&current_page=$2
+</IfModule>
