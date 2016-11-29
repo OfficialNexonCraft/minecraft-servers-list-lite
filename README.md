@@ -25,7 +25,7 @@ This code is free for everybody to use for personal purposes. It is strictly pro
 5. Access http://yourdomain.com/install.php with your browser
 6. Enter the required details and hit enter. If there are no errors delete the install.php
 
-You can now login with your admin account( Username: admin ; Password: admin )
+You can now login with your admin account( Username: admin ; Password: admin ) by accessing the ** /login ** url.
 
 ## Requirements
 
