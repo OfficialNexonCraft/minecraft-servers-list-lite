@@ -1,8 +1,8 @@
 # Minecraft Servers List - Lite Version
 
-Hello everyone! I've created this lite version of the [Minecraft Servers List](https://codecanyon.net/item/minecraft-servers-list/4062368&ref=grohsfabian) Script that doesn't require a lot of server power and also it is easy to maintain. 
+Hello everyone! I've created this lite version of the [Minecraft Servers List](http://bit.ly/minecraft-servers-list) Script that doesn't require a lot of server power and also it is easy to maintain. 
 
-This code is free for everybody to use for personal purposes. It is strictly prohibited to resell any part of the code.
+**This code is free for everybody to use for personal purposes. It is strictly prohibited to resell any part of the code.**
 
 ## Preview
 
