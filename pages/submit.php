@@ -6,7 +6,6 @@
 	Portfolio: http://codecanyon.net/user/grohsfabian
  */
 
-User::check_permission(0);
 include 'core/functions/recaptchalib.php';
 
 $address = $query_address = $name = $country_code = $youtube_link = $description = null;
