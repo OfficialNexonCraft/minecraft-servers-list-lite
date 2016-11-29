@@ -17,7 +17,6 @@ Preparing
 2. Upload the scripts content
 3. Make sure you uploaded the .htaccess file
 4. CHMOD 777 the core/database/connect.php file
-
 5. Access http://yourdomain.com/install.php with your browser
 6. Enter the required details and hit enter. If there are no errors delete the install.php
 
@@ -27,7 +26,7 @@ You can now login with your admin account( Username: admin ; Password: admin )
 ## Contact
 You can contact me for support or freelance work at:
 
-**Skype:** neeesteea.soda
-**Email:** gfabruno@gmail.com
-**Website:** GrohsFabian.com
-**Twitter:** @GrohsFabian
+* **Skype:** neeesteea.soda
+* **Email:** gfabruno@gmail.com
+* **Website:** GrohsFabian.com
+* **Twitter:** @GrohsFabian
