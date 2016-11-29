@@ -10,7 +10,7 @@ $language['headers']['view_report']						= "View Report";
 $language['headers']['edit_server']						= "Edit Server";
 $language['headers']['edit_server_details']				= "Server Details";
 $language['headers']['edit_category']					= "Edit Category";
-$language['headers']['submit']							= "ubmit Server";
+$language['headers']['submit']							= "Submit Server";
 
 $language['errors']['username_length']					= "Username must be between 3 and 32 characters !";
 $language['errors']['user_exists']	   	 				= "We're sorry, but the <strong>%s</strong> username is already taken !";

@@ -5,10 +5,9 @@
 	Check out my Twitter @grohsfabian | My website http://grohsfabian.com
 	Portfolio: http://codecanyon.net/user/grohsfabian
  */
- 
+
 User::check_permission(0);
 include 'core/functions/recaptchalib.php';
-include 'core/classes/Query.php';
 
 $address = $query_address = $name = $country_code = $youtube_link = $description = null;
 $connection_port = $query_port = 25565;
