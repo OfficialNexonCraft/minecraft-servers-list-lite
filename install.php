@@ -164,7 +164,7 @@ PHP;
 							$database->query("
 								INSERT INTO `users` (`user_id`, `username`, `password`, `email`, `lost_password_code`, `type`, `active`, `last_activity`)
 								VALUES
-									(1,'admin','365a4a0e748d76932d03cd46e62e4c3b4ca426c00c87bdf6ca9e692a0dc797224d151c3c9156a57c624e5bef533f0af9b8059726987c7929281a6b7acf7af8d4','admin@admin.com','0',2,1,'1480418142'),
+									(1,'admin','365a4a0e748d76932d03cd46e62e4c3b4ca426c00c87bdf6ca9e692a0dc797224d151c3c9156a57c624e5bef533f0af9b8059726987c7929281a6b7acf7af8d4','admin@admin.com','0',2,1,'1480418142')
 							");
 							$database->query("
 								INSERT INTO `settings` (`id`, `title`, `url`, `meta_description`, `analytics_code`, `servers_pagination`, `contact_email`, `cache_reset_time`, `display_offline_servers`, `top_ads`, `bottom_ads`, `side_ads`, `public_key`, `private_key`)

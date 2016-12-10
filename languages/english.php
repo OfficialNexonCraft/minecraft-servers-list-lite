@@ -12,6 +12,7 @@ $language['headers']['edit_server_details']				= "Server Details";
 $language['headers']['edit_category']					= "Edit Category";
 $language['headers']['submit']							= "Submit Server";
 
+$language['errors']['user_not_active']                  = "Your account is not active on the website !";
 $language['errors']['username_length']					= "Username must be between 3 and 32 characters !";
 $language['errors']['user_exists']	   	 				= "We're sorry, but the <strong>%s</strong> username is already taken !";
 $language['errors']['user_doesnt_exist'] 	 			= "The introduced username (<strong>%s</strong>) does not exist !";
@@ -221,6 +222,7 @@ $language['forms']['admin_report_edit_reported_x']		= "Reported %s";
 $language['forms']['admin_report_edit_reason']			= "Reason of reporting";
 $language['forms']['admin_report_edit_delete_x']		= "Delete %s";
 $language['forms']['server_status']						= "Status";
+$language['forms']['server_website']                    = "Website";
 $language['forms']['server_name']						= "Name";
 $language['forms']['server_address']					= "IP Address";
 $language['forms']['server_connection_port']			= "Connection Port";
