@@ -55,7 +55,7 @@ if(!empty($_POST)) {
 		$mcapi_url = 'https://mcapi.us/server/status?ip='.$address.'&port='.$query_port;
 		$raw_data = file_get_contents($mcapi_url);
 		$info = ($raw_data) ? json_decode($raw_data) : false;
-
+		$status = $info->online;
 
 		if(!$info && $info->online) {
 			$_SESSION['error'][] = $language['errors']['server_no_data'];
