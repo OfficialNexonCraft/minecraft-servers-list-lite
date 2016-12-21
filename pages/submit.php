@@ -25,7 +25,8 @@ if(!empty($_POST)) {
 	$youtube_link = filter_var($_POST['youtube_id'], FILTER_SANITIZE_STRING);
 	$youtube_id = youtube_url_to_id($youtube_link);
 	$description = filter_var($_POST['description'], FILTER_SANITIZE_STRING);
-
+	$user_id = (User::logged_in()) ? $account_user_id : 0;
+	
 	$captcha = recaptcha_check_answer ($settings->private_key, $_SERVER["REMOTE_ADDR"], $_POST["recaptcha_challenge_field"], $_POST["recaptcha_response_field"]);
 	$required_fields = array('address', 'connection_port', 'query_port', 'category_id', 'name');
 
@@ -95,7 +96,7 @@ if(!empty($_POST)) {
 
 		/* Add the server to the database as private */
 		$stmt = $database->prepare("INSERT INTO `servers` (`user_id`, `category_id`, `address`, `connection_port`, `query_port`, `active`, `status`, `date_added`, `name`, `country_code`, `youtube_id`, `description`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param('ssssssssssss',  $account_user_id, $category->category_id, $address, $connection_port, $query_port, $active, $status, $date, $name, $country_code, $youtube_id, $description);
+		$stmt->bind_param('ssssssssssss',  $user_id, $category->category_id, $address, $connection_port, $query_port, $active, $status, $date, $name, $country_code, $youtube_id, $description);
 		$stmt->execute();
 		$stmt->close();
 
